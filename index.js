@@ -20,8 +20,8 @@ const userRoutes = require("./routes/users");
 const postRoutes = require("./routes/posts");
 const commentRoutes = require("./routes/comments");
 const MongoStore = require("connect-mongo");
-// const dbUrl = process.env.DB_URL || "mongodb://localhost:27017/elavibe-blog";
-const dbUrl = "mongodb://localhost:27017/elavibe-blog";
+const dbUrl = process.env.DB_URL || "mongodb://localhost:27017/elavibe-blog";
+
 mongoose.connect(dbUrl);
 
 const db = mongoose.connection;
@@ -150,6 +150,7 @@ app.use((err, req, res, next) => {
   res.status(statusCode).render("error", { err });
 });
 
-app.listen(8080, () => {
-  console.log("elavating the vibe on port 8080");
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
+  console.log(`elavating the vibe on port ${port}`);
 });
