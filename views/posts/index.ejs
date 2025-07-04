@@ -1,0 +1,35 @@
+<% layout('layouts/boilerplate') %>
+<h1>All Posts</h1>
+<div>
+  <a href="/posts/new" class="btn btn-secondary mb-3">Add new post</a>
+</div>
+
+<% for(let post of posts) { %>
+
+<div class="card mb-3">
+  <div class="row">
+    <div class="col-md-4">
+      <% if (post.images && post.images.length > 0) { %>
+      <img class="img-fluid" alt="" src="<%= post.images[0].url %>" />
+      <% } else { %>
+      <img
+        class="img-fluid"
+        alt="No Image Available"
+        src="path/to/placeholder.jpg"
+      />
+      <% } %>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title"><%= post.title %></h5>
+        <p class="card-text">
+          <small class="text-muted"><%= post.date %></small>
+        </p>
+        <p class="card-text"><%= post.post %></p>
+        <a class="btn btn-primary" href="/posts/<%=post._id  %>">View Post </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% } %>
