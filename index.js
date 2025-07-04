@@ -145,6 +145,14 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+app.get("/postits", (req, res) => {
+  res.render("postits");
+});
+
+app.get("/postits", (req, res) => {
+  res.render("postits");
+});
+
 app.all(/(.*)/, (req, res, next) => {
   next(new ExpressError("Page Not Found", 404));
 });
