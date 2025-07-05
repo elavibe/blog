@@ -138,8 +138,18 @@ app.use((req, res, next) => {
 });
 
 app.use("/", userRoutes);
+app.use("/postits", userRoutes);
+app.use("/portfolio", userRoutes);
 app.use("/posts", postRoutes);
 app.use("/posts/:id/comments", commentRoutes);
+
+app.get("/postits", (req, res) => {
+  res.render("postits");
+});
+
+app.get("/portfolio", (req, res) => {
+  res.render("portfolio");
+});
 
 app.get("/", (req, res) => {
   res.render("home");

@@ -1,0 +1,247 @@
+body {
+  background-color: rgb(73, 73, 73);
+  font-family: "Nunito", sans-serif;
+}
+
+.blurb h2,
+h1 {
+  color: orange;
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+.blurb p {
+  color: whitesmoke;
+  font-weight: 100;
+  font-size: 1.125rem;
+  line-height: 2;
+}
+button {
+  background: none;
+  border: none;
+}
+.content {
+  margin-top: 150px;
+}
+.content2 {
+  margin-top: 15px;
+}
+.content3 {
+  margin-top: 5px;
+}
+.content4 {
+  margin-top: 120px;
+}
+#mainNavbar {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+#mainNavbar .nav-link {
+  color: white;
+}
+#mainNavbar .nav-link:hover {
+  color: orangered;
+}
+
+#mainNavbar .navbar-brand {
+  color: orangered;
+}
+#mainNavbar .navbar-brand:hover {
+  color: white;
+}
+
+.navbar.scrolled {
+  /* background-image: url(spaceDanNavBar.png) !important; */
+  background: rgba(0, 0, 0, 0.605) !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.postItPictures {
+  border-radius: 2.3rem;
+  padding: 0.5rem;
+  /* outline: 2px solid Black; */
+}
+.postItPicturesWide {
+  border-radius: 2.3rem;
+  height: 150px;
+  padding: 0.5rem;
+}
+
+.postItPicturesWider {
+  border-radius: 2.3rem;
+  height: 220px;
+  padding: 0.5rem;
+}
+.postItPicturesTall {
+  border-radius: 2.3rem;
+  width: 150px;
+  padding: 0.5rem;
+}
+
+.postItPicturesTaller {
+  border-radius: 2.3rem;
+  width: 220px;
+  padding: 0.5rem;
+}
+
+.previousBlack {
+  color: black;
+  font-family: "Roboto Mono", monospace;
+  font-size: 4rem !important;
+}
+.outline {
+  /* background-color: cadetblue; */
+  /* gap: 50px; */
+  border-radius: 2rem;
+}
+
+.header {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: orange;
+}
+.grover {
+  border-radius: 2rem;
+  cursor: pointer;
+}
+#size {
+  width: 600px;
+}
+
+#spaceButton {
+  color: orange;
+}
+
+.opaque {
+  opacity: 1;
+}
+
+.refresh-button {
+  background-color: orangered;
+  border: none;
+  margin-bottom: 2rem;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+.btn:active {
+  background-color: purple;
+  color: black;
+}
+
+.lead {
+  color: white;
+}
+.buttonChange {
+  position: relative;
+  content: "bigger art";
+  background-color: orangered;
+  border: none;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 10px;
+  width: 120px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.buttonChange:hover {
+  background-color: orange;
+}
+
+.buttonAfter {
+  position: relative;
+  content: "smaller art";
+  visibility: visible;
+  background-color: orangered;
+  border: none;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 10px;
+  width: 120px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.button:hover {
+  background-color: orange;
+}
+
+#jokes > li {
+  color: white;
+  padding: 0.3rem;
+  padding-right: 0.4rem;
+  text-align: left;
+  list-style-type: none;
+}
+
+#jokes {
+  background-color: rgba(0, 0, 0, 0.204);
+  border-radius: 0.5rem;
+}
+
+.JokeButton {
+  background-color: black;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-bottom: 30px;
+}
+
+.JokeButton:hover {
+  background-color: orange;
+}
+
+/* home css */
+
+/* body {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/skullFlowersfinish2.png");
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+} */
+.cover-container {
+  max-width: 60vw;
+}
+
+.nav-link {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 1rem;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link.active {
+  color: white;
+  border-bottom-color: white;
+}
+
+.btn-secondary,
+.btn-secondary:hover {
+  color: #333;
+  text-shadow: none;
+}
