@@ -1,4 +1,26 @@
 <% layout('layouts/boilerplate')%>
+<body class="d-flex sticky-top text-center text-white bg-dark">
+  <div class="cover-container d-flex w-80 h-20 p-1 mx-auto flex-column">
+    <header class="mb-auto">
+      <!-- <link rel="stylesheet" href="/stylesheets/style.css" /> -->
+      <link rel="stylesheet" href="/stylesheets/style.css" />
+      <div>
+        <nav class="nav nav-masthead justify-content-center float-md-right">
+          <a class="nav-link" aria-current="page" href="/">Home</a>
+          <a class="nav-link" href="/posts">Posts</a>
+          <a class="nav-link" href="/postits">PostItDrawings</a>
+          <a class="nav-link" href="/portfolio">Portfolio</a>
+          <% if(!currentUser) { %>
+          <a class="nav-link active" href="/login">Login</a>
+          <a class="nav-link" href="/register">Register</a>
+          <% } else { %>
+          <a class="nav-link" href="/logout">Logout</a>
+          <% } %>
+        </nav>
+      </div>
+    </header>
+  </div>
+</body>
 
 <div class="container d-flex justify-content-center align-items-center mt-5">
   <div class="row">
